@@ -1,0 +1,12 @@
+.imageWrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.imageWrapper img {
+  object-fit: cover;
+}
+
+.header {
+  position: relative;
+}

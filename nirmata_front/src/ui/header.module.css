@@ -1,0 +1,107 @@
+.nav {
+  width: inherit;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  width: 100%;
+  background-color: var(--header-bg);
+  padding: 2rem 1rem;
+  border-radius: 0.6rem;
+  top: 100%;
+
+  transition: color 0.2s ease-in-out;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.navListActive {
+  max-height: 100rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navList a:link,
+.navList a:visited,
+.callMe {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  letter-spacing: 0.08rem;
+  transition: 0.3s all ease-out;
+}
+
+.navList a:hover,
+.navList a:active {
+  color: var(--brand-color);
+}
+
+.callMe {
+  display: none;
+  align-items: flex-end;
+  transition: 0.3s all ease-out;
+  gap: 0.6rem;
+}
+
+.menu {
+  border: none;
+  margin-left: auto;
+
+  background-color: transparent;
+  font-size: 3rem;
+  color: var(--white-color);
+  cursor: pointer;
+  height: 3rem;
+}
+
+.callMe:hover,
+.callMe:active {
+  opacity: 0.8;
+}
+
+/* if 1 em = 16px [25em = 25 * 16 = 400px] */
+@media only screen and (min-width: 25em) {
+  .menu {
+    margin-right: 2rem;
+  }
+  .callMe {
+    display: flex;
+  }
+}
+
+/* if 1 em = 16px [62.5em = 62.5 * 16 = 1000px] */
+@media only screen and (min-width: 62.5em) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    width: unset;
+    gap: 4rem;
+    position: relative;
+    padding: 0;
+    top: 0;
+
+    max-height: 100rem;
+    opacity: 1;
+    visibility: visible;
+  }
+}

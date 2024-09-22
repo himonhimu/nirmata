@@ -1,0 +1,103 @@
+.welcomeSection {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subTitle {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.introTitle {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.introText {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.contactButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactButton:hover {
+  background-color: #0056b3;
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.serviceCard {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.serviceTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.serviceDescription {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.additionalServicesContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.additionalService {
+  text-align: center;
+}
+
+.additionalServiceTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.additionalServiceDescription {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
