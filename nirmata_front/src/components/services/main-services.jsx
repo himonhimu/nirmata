@@ -111,6 +111,9 @@ export default function MainServices() {
           <ServiceCard key={service.id} service={service} />
         ))}
       </div>
+      <div>
+        <h2>This is server config test</h2>
+      </div>
     </>
   );
 }
