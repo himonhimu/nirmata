@@ -32,6 +32,7 @@
   visibility: visible;
 }
 
+.menuItem,
 .navList a:link,
 .navList a:visited,
 .callMe {
@@ -39,8 +40,10 @@
   color: var(--white-color);
   letter-spacing: 0.08rem;
   transition: 0.3s all ease-out;
+  cursor: pointer;
 }
 
+.menuItem:hover,
 .navList a:hover,
 .navList a:active {
   color: var(--brand-color);
@@ -69,6 +72,79 @@
   opacity: 0.8;
 }
 
+.maniMenuList:hover .menuItem:hover svg {
+  transform: rotate(180deg);
+}
+
+.menuItem {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.menuItem svg {
+  font-size: 1.6rem;
+  transition-duration: 0.3s;
+}
+
+.submenu {
+  background: var(--header-bg);
+
+  padding: 0rem;
+  height: 0;
+
+  position: relative;
+  z-index: 11;
+  border-radius: 0.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5rem);
+
+  transition: all 0.4s ease-in-out;
+}
+
+.maniMenuList {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+
+.maniMenuList:hover .submenu,
+.mainMenuList:focus-within .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(2rem);
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.submenu a:link,
+.submenu a:visited {
+  font-size: 1.2rem;
+}
+
+.submenu a:link:not(:last-child) {
+  border-bottom: 0.1rem solid var(--brand-color);
+}
+
+.maniMenuList .submenu:hover ~ .menuItem:link,
+.menuItem:visited {
+  color: var(--brand-color);
+}
+
+.maniMenuList .submenu:hover ~ .menuItem svg {
+  transform: rotate(180deg);
+}
+
 /* if 1 em = 16px [25em = 25 * 16 = 400px] */
 @media only screen and (min-width: 25em) {
   .menu {
@@ -81,6 +157,18 @@
 
 /* if 1 em = 16px [62.5em = 62.5 * 16 = 1000px] */
 @media only screen and (min-width: 62.5em) {
+  .submenu {
+    padding: 1.8rem;
+    position: absolute;
+    margin-top: 1rem;
+    height: auto;
+  }
+
+  .maniMenuList {
+    display: flex;
+    flex-direction: column;
+  }
+
   .nav {
     justify-content: space-between;
   }

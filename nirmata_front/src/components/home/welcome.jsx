@@ -73,9 +73,6 @@ const WelcomeSection = () => {
           </p>
         </div>
       </div>
-      <div>
-        <p>Server Update Check</p>
-      </div>
     </section>
   );
 };

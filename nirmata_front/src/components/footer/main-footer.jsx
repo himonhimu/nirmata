@@ -34,8 +34,54 @@ export const navLinks = [
     label: "About Us",
   },
   {
-    link: "/services",
-    label: "Services",
+    link: "/our-services",
+    label: "Our Services",
+    submenu: [
+      {
+        label: "Architectural Design and Drawing",
+        link: "/architectural-design-drawing",
+      },
+      {
+        label: "Structural Design and Drawing",
+        link: "/structural-design-drawing",
+      },
+      {
+        label: "3D view and animation",
+        link: "/3D-view-animation",
+      },
+      {
+        label: "Electrical Design and Drawing",
+        link: "/electrical-design-drawing",
+      },
+      {
+        label: "Estimate Cost",
+        link: "/estimate-cost",
+      },
+      {
+        label: "Plan Approval (RDA/ Pourashava)",
+        link: "/plan-approval",
+      },
+      {
+        label: "Digital Survey",
+        link: "/digital-survey",
+      },
+      {
+        label: "Soil Test",
+        link: "/soil-test",
+      },
+      {
+        label: "Building Construction Supervision",
+        link: "/building-construction-supervision",
+      },
+      {
+        label: "Building Construction",
+        link: "/building-construction",
+      },
+      {
+        label: "Construction Materials Supply",
+        link: "/construction-materials-supply",
+      },
+    ],
   },
   {
     link: "/materials",
