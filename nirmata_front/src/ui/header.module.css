@@ -10,7 +10,6 @@
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  padding: 16px 1.6rem;
 }
 
 .navList {
@@ -157,15 +156,19 @@
   position: relative;
   height: 40px;
   aspect-ratio: 75/32;
+
+  margin: 1.6rem;
+}
+
+.menu {
+  margin-right: 2rem;
 }
 
 /* if 1 em = 16px [25em = 25 * 16 = 400px] */
 @media only screen and (min-width: 25em) {
-  .menu {
-    margin-right: 2rem;
-  }
   .callMe {
     display: flex;
+    margin: 1.6rem;
   }
 }
 

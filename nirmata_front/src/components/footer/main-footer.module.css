@@ -1,16 +1,12 @@
 .footer {
-  background-color: var(--header-bg);
+  border-top: 0.1rem solid var(--gray-color);
+  background-color: var(--white-color);
   padding: 4rem 0;
 }
 
 .footer > div {
   display: grid;
   gap: 2rem;
-}
-.card,
-.card a:link,
-.card a:visited {
-  color: var(--white-color);
 }
 
 .card h1 {
@@ -21,12 +17,10 @@
 }
 
 .imageWrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.4rem;
-}
-.imageWrapper h1 {
-  color: var(--brand-color) !important;
+  display: block;
+  position: relative;
+  height: 6rem !important;
+  aspect-ratio: 75 / 32;
 }
 
 .yourImage {

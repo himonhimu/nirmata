@@ -107,13 +107,7 @@ export default function MainFooter() {
       <div className="container">
         <div className={`${styles.card} ${styles.logo}`}>
           <Link href={"/"} className={styles.imageWrapper}>
-            <Image
-              src={"/logo.jpg"}
-              alt="Nirmata Logo"
-              width={40}
-              height={40}
-            />
-            <h1>Nirmata</h1>
+            <Image src={"/nirmata_logo.png"} alt="Nirmata Logo" fill />
           </Link>
 
           <ul className={styles.socialLinks}>
