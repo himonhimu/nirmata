@@ -28,6 +28,7 @@ jobs:
       run: |
         npm install --legacy-peer-deps  # Install dependencies
         npm run build --if-present        # Build the application
+    - run: export PATH=$PATH:/www/server/nodejs/v20.17.0/bin
     - run: pm2 restart 0
     # - run: npm run build --if-present
     # - run: npm test
