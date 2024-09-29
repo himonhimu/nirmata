@@ -1,0 +1,26 @@
+.cards {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+/* if 1 em = 16px [25em = 25 * 16 = 400px] */
+@media only screen and (min-width: 25em) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* if 1 em = 16px [50em = 50 * 16 = 800px] */
+@media only screen and (min-width: 50em) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

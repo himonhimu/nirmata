@@ -1,6 +1,7 @@
 import Welcome from "@/components/home/welcome";
 import styles from "./page.module.css";
 import Image from "next/image";
+import MainServices from "@/components/services/main-services";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
           <Image src={"/slider.jpg"} alt="Slider image" fill />
         </div>
       </header>{" "}
-      <section>{/* <Welcome /> */}</section>
+      <section className="container">
+        <MainServices />
+      </section>
     </>
   );
 }
