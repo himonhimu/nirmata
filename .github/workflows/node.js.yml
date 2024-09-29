@@ -15,16 +15,16 @@ jobs:
       matrix:
         node-version: [20.17.0]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+   
     steps:
+    - name: Fix permissions for cache directory
+      run: sudo chmod -R 777 ./nirmata_front/.next/cache
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Fix permissions for cache directory
-      run: sudo chmod -R 777 ./nirmata_front/.next/cache
     - name: Set working directory to frontend
       working-directory: ./nirmata_front  # Adjust this if necessary
       run: |
