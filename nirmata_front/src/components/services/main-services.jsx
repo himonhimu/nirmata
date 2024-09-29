@@ -112,7 +112,7 @@ export default function MainServices() {
         ))}
       </div>
       <div>
-        <h2>This is server config test</h2>
+        <h2>This is server config test server</h2>
       </div>
     </>
   );
