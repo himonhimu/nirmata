@@ -1,10 +1,16 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--white-color);
+  border-bottom: 0.1rem solid var(--gray-color);
+}
 .nav {
-  width: inherit;
-  top: 5%;
   display: flex;
   align-items: center;
-  position: absolute;
-  z-index: 1;
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 1.6rem;
 }
 
 .navList {
@@ -14,7 +20,7 @@
   gap: 2rem;
   position: absolute;
   width: 100%;
-  background-color: var(--header-bg);
+  background-color: var(--white-color);
   padding: 2rem 1rem;
   border-radius: 0.6rem;
   top: 100%;
@@ -32,9 +38,6 @@
   visibility: visible;
 }
 
-.menuItem,
-.navList a:link,
-.navList a:visited,
 .callMe {
   font-size: 1.4rem;
   color: var(--white-color);
@@ -62,7 +65,7 @@
 
   background-color: transparent;
   font-size: 3rem;
-  color: var(--white-color);
+  /* color: var(--white-color); */
   cursor: pointer;
   height: 3rem;
 }
@@ -91,7 +94,7 @@
 }
 
 .submenu {
-  background: var(--header-bg);
+  background-color: var(--white-color);
 
   padding: 0rem;
   height: 0;
@@ -118,6 +121,10 @@
   text-align: center;
 }
 
+.maniMenuList a {
+  font-size: 1.4rem;
+}
+
 .maniMenuList:hover .submenu,
 .mainMenuList:focus-within .submenu {
   opacity: 1;
@@ -137,12 +144,19 @@
 }
 
 .maniMenuList .submenu:hover ~ .menuItem:link,
-.menuItem:visited {
+.maniMenuList .submenu:hover ~ .menuItem:visited,
+.maniMenuList .submenu:hover ~ .menuItem {
   color: var(--brand-color);
 }
 
 .maniMenuList .submenu:hover ~ .menuItem svg {
   transform: rotate(180deg);
+}
+
+.logo {
+  position: relative;
+  height: 40px;
+  aspect-ratio: 75/32;
 }
 
 /* if 1 em = 16px [25em = 25 * 16 = 400px] */

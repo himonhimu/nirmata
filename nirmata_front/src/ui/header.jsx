@@ -17,10 +17,10 @@ export default function Header() {
   }
 
   return (
-    <nav className={`container`}>
+    <nav className={styles.container}>
       <div className={styles.nav}>
-        <Link href={"/"}>
-          <Image src={"/logo.jpg"} alt="Nirmata Logo" width={50} height={50} />
+        <Link href={"/"} className={styles.logo}>
+          <Image src={"/nirmata_logo.png"} alt="Nirmata Logo" fill />
         </Link>
 
         <ul

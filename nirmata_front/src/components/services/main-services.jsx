@@ -94,7 +94,7 @@ const services = [
 
 export default function MainServices() {
   return (
-    <>
+    <div>
       <div className="title">
         <h1>Our Services</h1>
 
@@ -114,6 +114,6 @@ export default function MainServices() {
       <div>
         <h2>This is server config test server</h2>
       </div>
-    </>
+    </div>
   );
 }
