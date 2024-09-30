@@ -111,12 +111,12 @@ export default function MainServices() {
           <ServiceCard key={service.id} service={service} />
         ))}
       </div>
-      <div>
+      {/* <div>
         <h2>
           This is server config test server with buld flag, this is just for
           test
         </h2>
-      </div>
+      </div> */}
     </div>
   );
 }
