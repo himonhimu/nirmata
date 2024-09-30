@@ -46,6 +46,7 @@
   cursor: pointer;
 }
 
+.activeMenu,
 .menuItem:hover,
 .navList a:hover,
 .navList a:active {

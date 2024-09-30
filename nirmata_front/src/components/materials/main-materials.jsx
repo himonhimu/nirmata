@@ -84,7 +84,12 @@ export default function MainMaterials() {
               <tr key={name}>
                 <td>{index + 1}</td>
                 <td className={styles.imageWrapper}>
-                  <Image src={image.src || "/no-image.png"} alt={name} fill />
+                  <Image
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    src={image.src || "/no-image.png"}
+                    alt={name}
+                    fill
+                  />
                 </td>
                 <td>{name}</td>
                 <td className={styles.price}>
