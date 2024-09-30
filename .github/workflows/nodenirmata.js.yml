@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node Nirmata 01
 
 on:
   push:
@@ -21,21 +21,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-
-      # Step for "build" command in commit message
       - name: Build Application
-        if: contains(github.event.head_commit.message, 'build')
+        if: contains(github.event.head_commit.message, 'build_project')
         working-directory: ./nirmata_front # Adjust this if necessary
         run: |
           echo "Running npm install..."
           npm install --legacy-peer-deps  # Install dependencies
           echo "Building the application..."
           npm run build --if-present        # Build the application
-
-      # Step for restarting PM2
-      - name: Restart PM2
-        if: contains(github.event.head_commit.message, 'build')
-        run: |
-          export PATH=$PATH:/www/server/nodejs/v20.17.0/bin
-          echo "Restarting PM2..."
-          pm2 restart 0
+          echo "restart project via pm2..."
+          pm2 restart 0        # restart the project

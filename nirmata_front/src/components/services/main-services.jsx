@@ -112,7 +112,10 @@ export default function MainServices() {
         ))}
       </div>
       <div>
-        <h2>This is server config test server</h2>
+        <h2>
+          This is server config test server with buld flag, this is just for
+          test
+        </h2>
       </div>
     </div>
   );
