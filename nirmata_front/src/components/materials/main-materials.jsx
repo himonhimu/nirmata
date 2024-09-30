@@ -73,10 +73,10 @@ export default function MainMaterials() {
         <table className={styles.table}>
           <thead>
             <tr>
-              <td>No.</td>
-              <td>Image</td>
-              <td>Name</td>
-              <td>Price</td>
+              <th>No.</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
             </tr>
           </thead>
           <tbody>

@@ -19,7 +19,7 @@ export const services = [
     description:
       "We create innovative and functional architectural designs, blending aesthetics with practicality to meet your unique vision.",
     icon: <FaDraftingCompass />,
-    link: "/architectural-design-drawing",
+    link: "architectural-design-drawing",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const services = [
     description:
       "Our team provides accurate and safe structural designs to ensure your building stands strong and meets all engineering standards.",
     icon: <FaBuilding />,
-    link: "/structural-design-drawing",
+    link: "structural-design-drawing",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const services = [
     description:
       "Experience your future building with our realistic 3D views and animations, offering a virtual tour before construction begins.",
     icon: <Gi3dGlasses />,
-    link: "/3D-view-animation",
+    link: "3D-view-animation",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const services = [
     description:
       "We offer detailed electrical design services, ensuring your building is safe, efficient, and meets all regulations.",
     icon: <GiElectric />,
-    link: "/electrical-design-drawing",
+    link: "electrical-design-drawing",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export const services = [
     description:
       "Receive a precise estimate of your project’s cost to help you plan your budget with confidence and avoid surprises.",
     icon: <GiMoneyStack />,
-    link: "/estimate-cost",
+    link: "estimate-cost",
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ export const services = [
     description:
       "We assist in obtaining all necessary approvals from the relevant authorities, ensuring your project complies with local regulations.",
     icon: <MdApproval />,
-    link: "/plan-approval",
+    link: "plan-approval",
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const services = [
     description:
       "Our digital survey services use the latest technology to accurately measure and map your property, providing essential data for planning and design.",
     icon: <FiActivity />,
-    link: "/digital-survey",
+    link: "digital-survey",
   },
   {
     id: 8,
@@ -75,7 +75,7 @@ export const services = [
     description:
       "We perform thorough soil tests to ensure your site is suitable for construction, guaranteeing the safety and durability of your building.",
     icon: <GiTestTubes />,
-    link: "/soil-test",
+    link: "soil-test",
   },
   {
     id: 9,
@@ -83,7 +83,7 @@ export const services = [
     description:
       "Our expert supervisors monitor every stage of construction to ensure your project is executed with precision and quality.",
     icon: <MdSupervisedUserCircle />,
-    link: "/building-construction-supervision",
+    link: "building-construction-supervision",
   },
   {
     id: 10,
@@ -91,7 +91,7 @@ export const services = [
     description:
       "From foundation to finish, we handle all aspects of building construction, delivering high-quality results on time and within budget.",
     icon: <FaLaptopHouse />,
-    link: "/building-construction",
+    link: "building-construction",
   },
   {
     id: 11,
@@ -99,7 +99,7 @@ export const services = [
     description:
       "We supply high-grade construction materials, ensuring that your project is built with durable and reliable resources.",
     icon: <GiMaterialsScience />,
-    link: "/construction-materials-supply",
+    link: "construction-materials-supply",
   },
 ];
 

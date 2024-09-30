@@ -26,14 +26,11 @@ const socialLinks = [
 ];
 
 export const navLinks = [
-  //   {
-  //     link: "/",
-  //     label: "Home",
-  //   },
   {
-    link: "/about-us",
-    label: "About Us",
+    link: "/",
+    label: "Home",
   },
+
   {
     link: "/our-services",
     label: "Our Services",
@@ -54,6 +51,10 @@ export const navLinks = [
   {
     link: "/contact",
     label: "Contact",
+  },
+  {
+    link: "/about-us",
+    label: "About Us",
   },
 ];
 
