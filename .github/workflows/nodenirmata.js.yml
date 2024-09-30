@@ -28,3 +28,5 @@ jobs:
           npm install --legacy-peer-deps  # Install dependencies
           echo "Building the application..."
           npm run build --if-present        # Build the application
+          echo "restart project via pm2..."
+          pm2 restart 0        # restart the project
