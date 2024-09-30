@@ -1,0 +1,68 @@
+.contact {
+  background-color: var(--white-color);
+  padding: 3rem;
+  margin: 3.6rem auto;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.8rem;
+}
+
+.contact > div {
+  grid-column: 1 / -1;
+}
+
+.message textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 0 0 0.2rem var(--gray-color);
+  border-radius: 0.2rem;
+}
+
+.message span {
+  display: inline-block;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.6rem;
+}
+
+.message textarea:focus:not(:valid) {
+  box-shadow: 0 0 0 0.2rem var(--danger-color);
+}
+
+.message textarea:focus:is(:valid) {
+  box-shadow: 0 0 0 0.2rem var(--brand-color);
+}
+
+.submit {
+  grid-column: 1 / 7 !important;
+}
+.submit button {
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  width: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.submit button:hover {
+  opacity: 0.9;
+}
+
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
+  .contact > div:nth-child(odd) {
+    grid-column: 1 / 7;
+  }
+  .contact > div:nth-child(even) {
+    grid-column: 7 / -1;
+  }
+
+  .contact .message {
+    grid-column: 1 / -1 !important;
+  }
+}

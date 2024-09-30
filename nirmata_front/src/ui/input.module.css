@@ -1,0 +1,26 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 0.2rem var(--gray-color);
+  border-radius: 0.2rem;
+}
+
+.input span {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.6rem;
+}
+
+.input input:focus:not(:valid) {
+  box-shadow: 0 0 0 0.2rem var(--danger-color);
+}
+
+.input input:focus:is(:valid) {
+  box-shadow: 0 0 0 0.2rem var(--brand-color);
+}
