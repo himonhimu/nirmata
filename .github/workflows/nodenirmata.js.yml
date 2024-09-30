@@ -1,0 +1,33 @@
+name: Node Nirmata 01
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [20.17.0]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: Build Application
+        if: contains(github.event.head_commit.message, 'build_project')
+        working-directory: ./nirmata_front # Adjust this if necessary
+        run: |
+          echo "Running npm install..."
+          npm install --legacy-peer-deps  # Install dependencies
+          echo "Building the application..."
+          npm run build --if-present        # Build the application
+          echo "restart project via pm2..."
+          pm2 restart 0        # restart the project

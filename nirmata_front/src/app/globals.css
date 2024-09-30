@@ -16,12 +16,6 @@
   --gray-color: #ddd;
 }
 
-html,
-body,
-:root {
-  height: 100%;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
