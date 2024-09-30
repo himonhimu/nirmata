@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <Slider />
-      {/* 
+
       <section className="container">
         <MainServices />
-      </section> */}
+      </section>
 
       <section className="container">
         <MainMaterials />

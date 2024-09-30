@@ -83,13 +83,15 @@ export default function MainMaterials() {
             {materials.map(({ image, name, price }, index) => (
               <tr key={name}>
                 <td>{index + 1}</td>
-                <td className={styles.imageWrapper}>
-                  <Image
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src={image.src || "/no-image.png"}
-                    alt={name}
-                    fill
-                  />
+                <td>
+                  <div className={styles.imageWrapper}>
+                    <Image
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      src={image.src || "/no-image.png"}
+                      alt={name}
+                      fill
+                    />
+                  </div>
                 </td>
                 <td>{name}</td>
                 <td className={styles.price}>

@@ -1,10 +1,11 @@
+import Link from "next/link";
 import styles from "./service-card.module.css";
 
 export default function ServiceCard({ service }) {
   return (
-    <div className={styles.card}>
+    <Link href={`/our-services/${service.link}`} className={styles.card}>
       {service.icon}
-      <h3>{service.title}</h3>
-    </div>
+      <h3>{service.label}</h3>
+    </Link>
   );
 }

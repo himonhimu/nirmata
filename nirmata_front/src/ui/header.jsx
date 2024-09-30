@@ -46,6 +46,7 @@ export default function Header() {
                     <li key={link}>
                       <Link
                         href={`${menuLink}/${link}`}
+                        onClick={handleActiveMenu}
                         className={
                           "/" + activeSubMenu === link ? styles.activeMenu : ""
                         }

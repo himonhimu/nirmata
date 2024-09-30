@@ -1,8 +1,12 @@
 .card {
   text-align: center;
   padding: 4rem;
-  border: 0.1rem solid var(--gray-color);
+  box-shadow: 0 0 0 0.1rem var(--gray-color);
   cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.card:hover {
+  box-shadow: 0 0 0 0.1rem var(--brand-color);
 }
 .card h3 {
   padding-top: 1.4rem;

@@ -5,6 +5,7 @@ import { CiInstagram } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 
 import Link from "next/link";
+import { services } from "../services/main-services";
 
 const socialLinks = [
   {
@@ -36,52 +37,7 @@ export const navLinks = [
   {
     link: "/our-services",
     label: "Our Services",
-    submenu: [
-      {
-        label: "Architectural Design and Drawing",
-        link: "/architectural-design-drawing",
-      },
-      {
-        label: "Structural Design and Drawing",
-        link: "/structural-design-drawing",
-      },
-      {
-        label: "3D view and animation",
-        link: "/3D-view-animation",
-      },
-      {
-        label: "Electrical Design and Drawing",
-        link: "/electrical-design-drawing",
-      },
-      {
-        label: "Estimate Cost",
-        link: "/estimate-cost",
-      },
-      {
-        label: "Plan Approval (RDA/ Pourashava)",
-        link: "/plan-approval",
-      },
-      {
-        label: "Digital Survey",
-        link: "/digital-survey",
-      },
-      {
-        label: "Soil Test",
-        link: "/soil-test",
-      },
-      {
-        label: "Building Construction Supervision",
-        link: "/building-construction-supervision",
-      },
-      {
-        label: "Building Construction",
-        link: "/building-construction",
-      },
-      {
-        label: "Construction Materials Supply",
-        link: "/construction-materials-supply",
-      },
-    ],
+    submenu: services,
   },
   {
     link: "/materials",
