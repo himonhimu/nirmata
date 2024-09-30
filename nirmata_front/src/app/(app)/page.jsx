@@ -1,14 +1,19 @@
 import MainServices from "@/components/services/main-services";
 import Slider from "@/components/home/slider";
+import MainMaterials from "@/components/materials/main-materials";
 
 export default function Home() {
   return (
     <>
       <Slider />
-
-      <div className="container">
+      {/* 
+      <section className="container">
         <MainServices />
-      </div>
+      </section> */}
+
+      <section className="container">
+        <MainMaterials />
+      </section>
     </>
   );
 }

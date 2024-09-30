@@ -1,0 +1,41 @@
+.materials {
+  background-color: var(--white-color);
+  padding: 1rem;
+  margin: 3.6rem 0;
+}
+.table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0.1rem solid var(--gray-color);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 10rem;
+  height: 6rem;
+}
+
+.imageWrapper img {
+  object-fit: contain;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table tr,
+.table td {
+  text-align: center;
+  padding: 8px;
+  font-size: 1.4rem;
+}
+
+.table tr:nth-child(even) {
+  background-color: var(--gray-color);
+}
+
+.price {
+  letter-spacing: 0.1rem;
+}
