@@ -4,3 +4,29 @@ command to write in commit build_project
 its brunch
 build-01
 build-02
+
+
+remove the cache files from nginx proxy_cache_dir
+
+sudo rm -rf /www/server/nginx/proxy_cache_dir/*
+
+restart the ngins process
+
+sudo systemctl restart nginx
+
+
+anayase namechep server pass : W1pz55fE8FlhCjMH31
+
+
+==================================================================
+Congratulations! Installed successfully!
+==================================================================
+aaPanel Internet Address: https://66.29.130.31:21766/142f5f50
+aaPanel Internal Address: https://66.29.130.31:21766/142f5f50
+username: kktrdgzv
+password: 398f07a3
+Warning:
+If you cannot access the panel,
+release the following port (21766|888|80|443|20|21) in the security group
+==================================================================
+Time consumed: 4 Minute!
