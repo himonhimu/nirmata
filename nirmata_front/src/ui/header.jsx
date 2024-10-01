@@ -48,7 +48,7 @@ export default function Header() {
                         href={`${menuLink}/${link}`}
                         onClick={handleActiveMenu}
                         className={
-                          "/" + activeSubMenu === link ? styles.activeMenu : ""
+                          activeSubMenu === link ? styles.activeMenu : ""
                         }
                       >
                         {label}

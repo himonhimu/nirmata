@@ -1,0 +1,136 @@
+/* General container */
+.container {
+  background-color: var(--white-color);
+  padding: 1.6rem;
+  margin: 3.6rem 0;
+}
+
+.container p {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f4f4f4;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* Introduction Section */
+.introduction {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.introText {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Benefits Section */
+.benefits {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.benefitItem {
+  background-color: #eaeaea;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.benefitItem h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.benefitItem p {
+  color: #555;
+}
+
+/* Process Section */
+.process {
+  margin-bottom: 3rem;
+}
+
+.step {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  color: #555;
+}
+
+/* Use Cases Section */
+.useCases {
+  margin-bottom: 3rem;
+}
+
+.benefitList,
+.processSteps,
+.useCaseList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.useCaseItem {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.useCaseItem h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.useCaseItem p {
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+  margin-bottom: 3rem;
+}
+
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
+  .benefitList,
+  .processSteps,
+  .useCaseList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
