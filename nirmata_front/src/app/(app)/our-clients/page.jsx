@@ -1,11 +1,11 @@
-import MainServices from "@/components/services/main-services";
-import Slider from "@/components/home/slider";
-import MainMaterials from "@/components/materials/main-materials";
+import styles from "./css/page.module.css";
+
+import ClientReview from "@/components/our-clients/client-reviews";
 
 export default function Home() {
   return (
-    <>
-      <h1>Our Clients</h1>
-    </>
+    <section className={`container ${styles.container}`}>
+      <ClientReview />
+    </section>
   );
 }

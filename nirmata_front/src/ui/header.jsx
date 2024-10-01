@@ -1,7 +1,7 @@
 "use client";
 
 import { navLinks } from "@/components/footer/main-footer";
-import styles from "./header.module.css";
+import styles from "./css/header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -20,8 +20,6 @@ export default function Header() {
 
   const activeMainMenu = pathName.split("/")[1] || "/";
   const activeSubMenu = pathName.split("/")?.[2];
-
-  console.log(activeMainMenu);
 
   return (
     <nav className={styles.container}>

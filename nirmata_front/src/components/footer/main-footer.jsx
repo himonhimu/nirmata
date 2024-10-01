@@ -6,6 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import Link from "next/link";
 import { services } from "../services/main-services";
+import { mediaLinks } from "../media/media";
 
 export const socialLinks = [
   {
@@ -47,6 +48,7 @@ export const navLinks = [
   {
     link: "/media",
     label: "Media",
+    submenu: mediaLinks,
   },
   {
     link: "/contact",

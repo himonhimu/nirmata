@@ -1,4 +1,4 @@
-import styles from "./input.module.css";
+import styles from "./css/input.module.css";
 
 export default function Input({ label, ...rest }) {
   return (
