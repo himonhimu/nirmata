@@ -1,5 +1,6 @@
-comand to write in commit build_project
+command to write in commit build_project
 
 
 its brunch
 build-01
+build-02
