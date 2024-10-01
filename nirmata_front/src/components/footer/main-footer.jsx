@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { services } from "../services/main-services";
 
-const socialLinks = [
+export const socialLinks = [
   {
     href: "https://www.facebook.com/profile.php?id=61563176709784",
     label: "Facebook",

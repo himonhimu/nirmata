@@ -1,0 +1,72 @@
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3rem;
+
+  order: 2;
+}
+.heading {
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.contactInfo > div h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.grid p,
+.grid ul {
+  grid-column: 1 / -1;
+}
+
+.grid p {
+  font-size: 1.3rem;
+  letter-spacing: 0.08rem;
+}
+
+.grid ul {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+  padding-top: 2rem;
+}
+
+.grid ul span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0.1rem solid var(--gray-color);
+  border-radius: 100%;
+}
+
+.grid ul span svg {
+  font-size: 1.4rem;
+}
+.grid ul span:hover svg {
+  color: var(--brand-color);
+}
+
+.grid > span svg {
+  color: var(--brand-color);
+}
+
+/* if 1 em = 16px [50em = 50 * 16 = 800px] */
+@media only screen and (min-width: 50em) {
+  .contactInfo {
+    order: -1;
+  }
+}

@@ -21,6 +21,8 @@ export default function Header() {
   const activeMainMenu = pathName.split("/")[1] || "/";
   const activeSubMenu = pathName.split("/")?.[2];
 
+  console.log(activeMainMenu);
+
   return (
     <nav className={styles.container}>
       <div className={styles.nav}>
@@ -61,7 +63,7 @@ export default function Header() {
               {submenu ? (
                 <button
                   className={`${styles.menuItem} ${
-                    "/" + activeMainMenu === menuLink ? styles.activeMenu : ""
+                    activeMainMenu === menuLink ? styles.activeMenu : ""
                   }`}
                 >
                   {" "}
@@ -72,7 +74,11 @@ export default function Header() {
                   href={menuLink}
                   onClick={handleActiveMenu}
                   className={`${styles.menuItem} ${
-                    "/" + activeMainMenu === menuLink ? styles.activeMenu : ""
+                    activeMainMenu === "/" && label === "Home"
+                      ? styles.activeMenu
+                      : "/" + activeMainMenu === menuLink
+                      ? styles.activeMenu
+                      : ""
                   }`}
                 >
                   {label}{" "}
