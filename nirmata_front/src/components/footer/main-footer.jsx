@@ -1,12 +1,11 @@
 import Image from "next/image";
-import styles from "./main-footer.module.css";
-import { FaFacebookF } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import styles from "./main-footer.module.css";
 
 import Link from "next/link";
-import { services } from "../services/main-services";
 import { mediaLinks } from "../media/media";
+import { services } from "../services/main-services";
 
 export const socialLinks = [
   {
@@ -73,6 +72,17 @@ export default function MainFooter() {
               fill
             />
           </Link>
+
+          <div className={styles.contact}>
+            <span>
+              Mail:{" "}
+              <Link href="mailto:nirmata24@gmail.com">nirmata24@gmail.com</Link>
+            </span>
+            <span>
+              Call:
+              <Link href="tel:01711-430093">01711-430093</Link>
+            </span>
+          </div>
 
           <ul className={styles.socialLinks}>
             {socialLinks.map(({ href, icon, label }) => (
