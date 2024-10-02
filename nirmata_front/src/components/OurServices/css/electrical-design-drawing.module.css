@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--white-color);
+  padding: 1.6rem;
+  margin: 3.6rem auto;
+}
+
+.introduction {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333; /* Dark text color */
+  padding: 3rem 1rem; /* More padding for spacious feel */
+  text-align: center;
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 2rem 0; /* Margin to separate sections */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content p {
+  font-size: 1.4rem;
+}
+
+.content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.featuresGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.featuresGrid h3 {
+  font-size: 1.6rem;
+}
+
+.contact {
+  color: var(--brand-color);
+}

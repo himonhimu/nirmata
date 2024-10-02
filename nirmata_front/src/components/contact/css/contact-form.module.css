@@ -1,15 +1,7 @@
-.contact {
-  background-color: var(--white-color);
-  padding: 3rem;
-  margin: 3.6rem auto;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1.8rem;
-}
-
-.contact > div {
-  grid-column: 1 / -1;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .message textarea {
@@ -45,24 +37,10 @@
   color: var(--white-color);
   font-weight: 700;
   letter-spacing: 0.2rem;
-  width: 50%;
+  width: 100%;
   transition: all 0.2s ease-in-out;
 }
 
 .submit button:hover {
   opacity: 0.9;
-}
-
-/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
-@media only screen and (min-width: 37.5em) {
-  .contact > div:nth-child(odd) {
-    grid-column: 1 / 7;
-  }
-  .contact > div:nth-child(even) {
-    grid-column: 7 / -1;
-  }
-
-  .contact .message {
-    grid-column: 1 / -1 !important;
-  }
 }

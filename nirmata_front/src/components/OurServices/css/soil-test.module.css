@@ -1,0 +1,115 @@
+.section {
+  background-color: var(--white-color);
+  padding: 1.6rem;
+  margin: 3.6rem auto;
+}
+
+.banner {
+  background: #3b5998;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bannerTitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bannerSubtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.info,
+.steps,
+.testTypes {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.infoTitle,
+.stepsTitle,
+.testTypesTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.infoText {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.stepsList,
+.testTypesList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stepItem,
+.testTypesItem {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.contactSection {
+  background-color: #3b5998;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.contactTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contactText {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactButton {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.contactButton:hover {
+  background-color: #ffbb00;
+}
+
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* if 1 em = 16px [50em = 50 * 16 = 800px] */
+@media only screen and (min-width: 50em) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,72 @@
+.wrapper {
+  background-color: var(--white-color);
+  padding: 1.6rem;
+  margin: 3.6rem auto;
+}
+
+.wrapper p {
+  font-size: 1.4rem;
+}
+
+.textContent {
+  font-size: 1.1rem;
+}
+
+.heading {
+  font-size: 1.6rem;
+  color: #004400;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.list li {
+  font-size: 1.4rem;
+  list-style: disc inside;
+  color: #555;
+}
+
+.finalNote {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.ctaWrapper {
+  text-align: left;
+}
+
+.ctaButton {
+  background-color: #006600;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ctaButton:hover {
+  background-color: #004400;
+}
+
+.imageWrapper {
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

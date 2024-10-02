@@ -6,8 +6,9 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import Link from "next/link";
 import { services } from "../services/main-services";
+import { mediaLinks } from "../media/media";
 
-const socialLinks = [
+export const socialLinks = [
   {
     href: "https://www.facebook.com/profile.php?id=61563176709784",
     label: "Facebook",
@@ -47,6 +48,7 @@ export const navLinks = [
   {
     link: "/media",
     label: "Media",
+    submenu: mediaLinks,
   },
   {
     link: "/contact",

@@ -7,6 +7,7 @@ import Relationship from "./images/handshake-icon.webp";
 import Excellence from "./images/trophy-icon.webp";
 import Image from "next/image";
 import styles from "./aboutus.module.css";
+
 const aboutData = [
   {
     img: TeamIcon.src,
@@ -48,35 +49,37 @@ const aboutData = [
 
 export default function AboutUs() {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.hero_section}>
-        <div className={styles.hero_content}>
+    <section className={"container"}>
+      <div className={styles.wrapper}>
+        <div className={"title"}>
           <h1>Welcome to Nirmata</h1>
           <p>
             Where expertise in construction, building consultancy, and materials
             supply converge to create exceptional spaces and structures.
           </p>
         </div>
-      </div>
-      {aboutData.map((item, index) => {
-        return (
-          <div key={index} className={styles.container}>
-            <Image src={item.img} alt={item.alt} height={100} width={100} />
-            <div className={styles.text_content}>
-              <h2>{item.h2}</h2>
-              <p>{item.p}</p>
+
+        {aboutData.map((item, index) => {
+          return (
+            <div key={index} className={styles.container}>
+              <Image src={item.img} alt={item.alt} height={100} width={100} />
+              <div className={styles.text_content}>
+                <h2>{item.h2}</h2>
+                <p>{item.p}</p>
+              </div>
             </div>
-          </div>
-        );
-      })}
-      <div className={styles.final_section}>
-        <p>
-          Thank you for considering Nirmata for your construction and
-          consultancy needs. We look forward to the opportunity to work with you
-          and bring your vision to life. Together, we can build something
-          extraordinary.
-        </p>
+          );
+        })}
+
+        <div className={styles.final_section}>
+          <p>
+            Thank you for considering Nirmata for your construction and
+            consultancy needs. We look forward to the opportunity to work with
+            you and bring your vision to life. Together, we can build something
+            extraordinary.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
