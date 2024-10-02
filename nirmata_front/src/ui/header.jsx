@@ -1,14 +1,14 @@
 "use client";
 
 import { navLinks } from "@/components/footer/main-footer";
-import styles from "./css/header.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdMenu } from "react-icons/md";
-import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+import { MdMenu } from "react-icons/md";
+import styles from "./css/header.module.css";
 
 export default function Header() {
   const pathName = usePathname();
@@ -61,7 +61,7 @@ export default function Header() {
               {submenu ? (
                 <button
                   className={`${styles.menuItem} ${
-                    activeMainMenu === menuLink ? styles.activeMenu : ""
+                    "/" + activeMainMenu === menuLink ? styles.activeMenu : ""
                   }`}
                 >
                   {" "}

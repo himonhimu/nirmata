@@ -1,0 +1,102 @@
+.constructionSection {
+  background-color: var(--white-color);
+  padding: 1.6rem;
+  margin: 3.6rem auto;
+}
+
+.processWrapper {
+  padding: 3rem 0;
+}
+
+.processTitle {
+  font-size: 2.5rem;
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.stepNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0056b3;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6f0ff;
+  border-radius: 50%;
+}
+
+.stepContent {
+  margin-left: 2rem;
+}
+
+.stepHeading {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.stepDescription {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.quoteSection {
+  margin: 4rem 0;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.quote {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.cite {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contactSection {
+  background-color: #0056b3;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactText {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.contactButton {
+  padding: 1rem 2.5rem;
+  font-size: 1.4rem;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: #ffbb00;
+}

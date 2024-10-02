@@ -1,0 +1,135 @@
+.supervisionSection {
+  background-color: var(--white-color);
+  padding: 1.6rem;
+  margin: 3.6rem auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.introTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.introDescription {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 1rem auto;
+  color: #666;
+}
+
+.featuresProcessGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.featureItem {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featureTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.processSection {
+  background-color: #f1f1f1;
+  padding: 3rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.processTitle {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 2rem;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.processStep {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.processStepTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.processStepDescription {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.contactSection {
+  background-color: #0056b3;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.contactTitle {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.contactDescription {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.contactButton {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: #ffbb00;
+}
+
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
+  .featuresProcessGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* if 1 em = 16px [50em = 50 * 16 = 800px] */
+@media only screen and (min-width: 50em) {
+  .featuresProcessGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
