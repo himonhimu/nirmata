@@ -1,0 +1,84 @@
+.slideshowContainer {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 10/5;
+}
+
+.prev,
+.next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -22px;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 1.04rem;
+  transition: 0.6s ease;
+  border-radius: 0.3rem;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 5%;
+}
+.prev {
+  left: 5%;
+}
+
+.active {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
+  .imageWrapper {
+    aspect-ratio: 10/3;
+  }
+}
+
+/* if 1 em = 16px [50em = 50 * 16 = 800px] */
+@media only screen and (min-width: 50em) {
+  /* Styles for 50em and above */
+}
+
+/* if 1 em = 16px [62.5em = 62.5 * 16 = 1000px] */
+@media only screen and (min-width: 62.5em) {
+  /* Styles for 62.5em and above */
+}
+
+/* if 1 em = 16px [75em = 75 * 16 = 1200px] */
+@media only screen and (min-width: 75em) {
+  /* Styles for 75em and above */
+}

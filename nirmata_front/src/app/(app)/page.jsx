@@ -1,11 +1,11 @@
-import Slider from "@/components/home/slider";
 import Client from "@/components/our-clients/client";
 import MainServices from "@/components/services/main-services";
+import Slideshow from "@/ui/slider";
 
 export default function Home() {
   return (
     <>
-      <Slider />
+      <Slideshow />
 
       <section className="container">
         <MainServices />
