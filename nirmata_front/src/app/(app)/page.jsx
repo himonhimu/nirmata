@@ -1,3 +1,4 @@
+import Welcome from "@/components/home/welcome";
 import Client from "@/components/our-clients/client";
 import MainServices from "@/components/services/main-services";
 import Slideshow from "@/ui/slider";
@@ -6,6 +7,10 @@ export default function Home() {
   return (
     <>
       <Slideshow />
+
+      <section className="container">
+        <Welcome />
+      </section>
 
       <section className="container">
         <MainServices />
