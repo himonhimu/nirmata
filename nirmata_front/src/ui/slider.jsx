@@ -4,7 +4,7 @@ import styles from "./css/slider.module.css";
 
 import { useEffect, useState } from "react";
 const images = [
-  { src: "/sliders/home_1.jpg", caption: "Caption One" },
+  // { src: "/sliders/home_1.jpg", caption: "Caption One" },
   { src: "/sliders/1.jpg", caption: "Caption One" },
   { src: "/sliders/3.jpg", caption: "Caption Three" },
   { src: "/sliders/4.jpg", caption: "Caption Four" },
