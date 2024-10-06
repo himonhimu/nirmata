@@ -3,8 +3,8 @@ import { CiInstagram } from "react-icons/ci";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import styles from "./main-footer.module.css";
 
+import { mediaLinks } from "@/app/(app)/media/[slug]/page";
 import Link from "next/link";
-import { mediaLinks } from "../media/media";
 import { services } from "../services/main-services";
 
 export const socialLinks = [
