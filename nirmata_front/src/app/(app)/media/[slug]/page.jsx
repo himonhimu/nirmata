@@ -1,4 +1,5 @@
 import PhotoGallery from "@/components/media/photo-gallery";
+import ProjectVideos from "@/components/media/project-videos";
 
 export const mediaLinks = [
   {
@@ -32,8 +33,9 @@ export default function SlugPage({ params }) {
   switch (params.slug) {
     case "photo-gallery":
       return <PhotoGallery />;
-
+    case "project-videos":
+      return <ProjectVideos />;
     default:
-      break;
+      return params.slug;
   }
 }

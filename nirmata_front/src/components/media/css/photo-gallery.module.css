@@ -33,21 +33,22 @@
     grid-template-columns: 1fr;
   }
 
-  .landscape, .portrait {
+  .landscape,
+  .portrait {
     grid-column: span 1;
     grid-row: span 1;
   }
 }
 
-/* Desktop: 3 columns */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
   .imageGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop: 3 columns */
-@media (min-width: 1025px) {
+/* if 1 em = 16px [62.5em = 62.5 * 16 = 1000px] */
+@media only screen and (min-width: 62.5em) {
   .imageGrid {
     grid-template-columns: repeat(3, 1fr);
   }
