@@ -1,19 +1,19 @@
-import MainServices from "@/components/services/main-services";
-import Slider from "@/components/home/slider";
-import MainMaterials from "@/components/materials/main-materials";
+import Welcome from "@/components/home/welcome";
 import Client from "@/components/our-clients/client";
+import MainServices from "@/components/services/main-services";
+import Slideshow from "@/ui/slider";
 
 export default function Home() {
   return (
     <>
-      <Slider />
+      <Slideshow />
 
       <section className="container">
-        <MainServices />
+        <Welcome />
       </section>
 
       <section className="container">
-        <MainMaterials />
+        <MainServices />
       </section>
 
       <section className="container">

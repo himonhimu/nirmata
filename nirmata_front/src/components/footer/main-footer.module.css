@@ -1,6 +1,6 @@
 .footer {
   border-top: 0.1rem solid var(--gray-color);
-  background-color: var(--white-color);
+  background-color: var(--brand-color);
   padding: 4rem 0;
 }
 
@@ -14,6 +14,7 @@
   padding-bottom: 1.4rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .imageWrapper {
@@ -21,6 +22,7 @@
   position: relative;
   height: 6rem !important;
   aspect-ratio: 75 / 32;
+  background-color: var(--white-color);
 }
 
 .yourImage {
@@ -33,7 +35,7 @@
   display: flex;
   align-items: center;
   gap: 2.6rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .socialLinks span {
@@ -46,14 +48,25 @@
   border-radius: 100%;
 }
 
-@media (hover) {
-  .socialLinks span:hover {
-    background-color: var(--white-color);
-  }
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 0.2rem;
+}
 
-  .socialLinks span:hover svg {
-    color: var(--brand-color);
-  }
+.contact span {
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+  color: var(--white-color);
+}
+
+.contact a:link,
+.contact a:visited {
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+  color: var(--white-color);
+  padding-left: 1rem;
 }
 
 .socialLinks svg {
@@ -70,14 +83,13 @@
   font-size: 1.4rem;
   letter-spacing: 0.06rem;
   transition: all 0.1s ease-in-out;
+  color: var(--white-color);
+  transition: all 0.1s ease-in-out;
 }
 
-@media (hover) {
-  .usefulLinks a:hover,
-  .usefulLinks a:active {
-    color: var(--brand-color);
-    letter-spacing: 0.1rem;
-  }
+.socialLinks svg,
+.socialLinks svg {
+  color: var(--white-color);
 }
 
 .usefulLinks a:active {
@@ -88,6 +100,29 @@
 .location address {
   font-size: 1.2rem;
   line-height: 1.6;
+  color: var(--white-color);
+}
+
+@media (hover) {
+  .socialLinks span:hover {
+    background-color: var(--white-color);
+  }
+
+  .socialLinks span:hover svg {
+    color: var(--brand-color);
+  }
+
+  .usefulLinks a:hover,
+  .usefulLinks a:active {
+    opacity: 0.8;
+    letter-spacing: 0.1rem;
+  }
+
+  .contact a:hover,
+  .contact a:active {
+    opacity: 0.8;
+    letter-spacing: 0.1rem;
+  }
 }
 
 /* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */

@@ -1,0 +1,55 @@
+.container {
+  background-color: var(--white-color);
+  padding: 1.6rem;
+  margin: 3.6rem auto;
+}
+
+.videoGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.videoCard {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.videoTitle {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--black-color);
+}
+
+/* if 1 em = 16px [37.5em = 37.5 * 16 = 600px] */
+@media only screen and (min-width: 37.5em) {
+  .videoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* if 1 em = 16px [62.5em = 62.5 * 16 = 1000px] */
+@media only screen and (min-width: 62.5em) {
+  .videoGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
