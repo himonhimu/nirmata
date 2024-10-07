@@ -76,7 +76,7 @@
 .usefulLinks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.8rem;
 }
 .usefulLinks a:link,
 .usefulLinks a:visited {

@@ -10,6 +10,26 @@
   padding: 3rem 0;
 }
 
+.servicesButton {
+  margin-bottom: 1.4rem;
+  padding: 1rem 1.6rem;
+  border: 0.1rem solid var(--brand-color);
+  display: inline-block;
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+  transition: all 0.1s ease-in-out;
+
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.servicesButton:hover {
+  letter-spacing: 0.1rem;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+}
+
 /* if 1 em = 16px [25em = 25 * 16 = 400px] */
 @media only screen and (min-width: 25em) {
   .cards {
@@ -21,13 +41,5 @@
 @media only screen and (min-width: 37.5em) {
   .cards {
     grid-template-columns: repeat(3, minmax(10rem, 1fr));
-  }
-}
-
-/* if 1 em = 16px [62.5em = 62.5 * 16 = 1000px] */
-@media only screen and (min-width: 62.5em) {
-  /* Styles for 62.5em and above */
-  .cards {
-    grid-template-columns: repeat(4, minmax(10rem, 1fr));
   }
 }

@@ -75,12 +75,16 @@ export default function MainFooter() {
 
           <div className={styles.contact}>
             <span>
-              Mail:{" "}
+              E-Mail:{" "}
               <Link href="mailto:nirmata24@gmail.com">nirmata24@gmail.com</Link>
             </span>
             <span>
               Call:
-              <Link href="tel:01711-430093">01711-430093</Link>
+              <Link href="tel:+8801711-430093">01711-430093</Link>
+            </span>
+            <span>
+              Call2:
+              <Link href="tel:+8801973-646514">01973-646514</Link>
             </span>
           </div>
 

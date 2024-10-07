@@ -7,7 +7,13 @@
 }
 .card:hover {
   box-shadow: 0 0 0 0.1rem var(--brand-color);
+  transform: translateY(-1rem);
 }
+
+.card:hover svg {
+  color: var(--brand-color);
+}
+
 .card h3 {
   padding-top: 1.4rem;
   font-size: 1.5rem;
@@ -16,4 +22,5 @@
 
 .card svg {
   font-size: 4rem;
+  transition: all 0.2s ease-out;
 }
