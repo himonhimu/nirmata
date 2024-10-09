@@ -5,7 +5,6 @@ import styles from "./main-footer.module.css";
 
 import { mediaLinks } from "@/app/(app)/media/[slug]/page";
 import Link from "next/link";
-import { services } from "../services/main-services";
 
 export const socialLinks = [
   {
@@ -34,7 +33,6 @@ export const navLinks = [
   {
     link: "/our-services",
     label: "Our Services",
-    submenu: services,
   },
   {
     link: "/materials",
@@ -67,7 +65,7 @@ export default function MainFooter() {
           <Link href={"/"} className={styles.imageWrapper}>
             <Image
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              src={"/nirmata_logo.png"}
+              src={"/nirmata_logo_rev.png"}
               alt="Nirmata Logo"
               fill
             />

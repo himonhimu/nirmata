@@ -21,7 +21,7 @@ export default function Slideshow() {
       );
     }, 10000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []);
 
   const showSlides = (n) => {
     if (n > images.length) {

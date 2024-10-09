@@ -22,7 +22,7 @@
   position: relative;
   height: 6rem !important;
   aspect-ratio: 75 / 32;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
 }
 
 .yourImage {

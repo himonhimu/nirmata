@@ -5,9 +5,6 @@ import MainServices from "@/components/services/main-services";
 import Slideshow from "@/ui/slider";
 import { services } from "./our-services/page";
 
-export const TOTAL_SERVICE_HOME_PAGE = 6;
-const homeServices = services.slice(0, TOTAL_SERVICE_HOME_PAGE);
-
 export default function Home() {
   return (
     <>
@@ -18,7 +15,7 @@ export default function Home() {
       </section>
 
       <section className="container">
-        <MainServices services={homeServices} />
+        <MainServices services={services.slice(0, 6)} show_more={true} />{" "}
       </section>
 
       <section className="container">
