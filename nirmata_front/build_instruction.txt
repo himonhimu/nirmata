@@ -32,3 +32,4 @@ release the following port (21766|888|80|443|20|21) in the security group
 Time consumed: 4 Minute!
 
 build 3
+build 4
