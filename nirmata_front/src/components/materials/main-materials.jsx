@@ -109,7 +109,7 @@ export default function MainMaterials() {
                   <strong>{price}</strong>
                 </td>
                 <td>
-                  <time datetime={updatedDate}>
+                  <time dateTime={updatedDate}>
                     <strong> {new Date(updatedDate).toDateString()}</strong>
                   </time>
                 </td>
