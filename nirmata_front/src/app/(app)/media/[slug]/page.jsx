@@ -1,5 +1,6 @@
 import PhotoGallery from "@/components/media/photo-gallery";
 import ProjectVideos from "@/components/media/project-videos";
+import { notFound } from "next/navigation";
 
 export const mediaLinks = [
   {
@@ -36,6 +37,7 @@ export default function SlugPage({ params }) {
     case "project-videos":
       return <ProjectVideos />;
     default:
-      return params.slug;
+      // return params.slug;
+      return notFound();
   }
 }

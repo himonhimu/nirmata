@@ -15,11 +15,11 @@ export default function Home() {
       </section>
 
       <section className="container">
-        <MainServices services={services.slice(0, 6)} show_more={true} />{" "}
+        <MainServices services={services} show_more={true} />{" "}
       </section>
 
       <section className="container">
-        <MainMaterials />
+        <MainMaterials show_more={true} slice_number={4} />
       </section>
 
       <section className="container">

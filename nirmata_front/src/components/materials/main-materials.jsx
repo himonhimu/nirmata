@@ -9,6 +9,7 @@ import smallStone from "@/assets/materials-picture/Indian stone Small  Size.jpg"
 import localStand from "@/assets/materials-picture/Local Sand.jpg";
 import machineIt from "@/assets/materials-picture/machine it.jpg";
 import rod from "@/assets/materials-picture/Rod photo.jpg";
+import Link from "next/link";
 
 const materials = [
   {
@@ -68,7 +69,7 @@ const materials = [
   },
 ];
 
-export default function MainMaterials() {
+export default function MainMaterials({ show_more, slice_number }) {
   return (
     <div className={styles.materials}>
       <div className="title">
@@ -91,30 +92,41 @@ export default function MainMaterials() {
             </tr>
           </thead>
           <tbody>
-            {materials.map(({ image, name, price, updatedDate }, index) => (
-              <tr key={name}>
-                <td>{index + 1}</td>
-                <td>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      src={image.src || "/no-image.png"}
-                      alt={name}
-                      fill
-                    />
-                  </div>
-                </td>
-                <td>{name}</td>
-                <td className={styles.price}>
-                  <strong>{price}</strong>
-                </td>
-                <td>
-                  <time datetime={updatedDate}>
-                    <strong> {new Date(updatedDate).toDateString()}</strong>
-                  </time>
+            {materials
+              .slice(0, slice_number || materials.length)
+              .map(({ image, name, price, updatedDate }, index) => (
+                <tr key={name}>
+                  <td>{index + 1}</td>
+                  <td>
+                    <div className={styles.imageWrapper}>
+                      <Image
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        src={image.src || "/no-image.png"}
+                        alt={name}
+                        fill
+                      />
+                    </div>
+                  </td>
+                  <td>{name}</td>
+                  <td className={styles.price}>
+                    <strong>{price}</strong>
+                  </td>
+                  <td>
+                    <time datetime={updatedDate}>
+                      <strong> {new Date(updatedDate).toDateString()}</strong>
+                    </time>
+                  </td>
+                </tr>
+              ))}
+            {show_more && (
+              <tr>
+                <td colSpan={5} className={styles.show_more_td}>
+                  <Link href="/materials" className={styles.show_more}>
+                    Show More
+                  </Link>
                 </td>
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       </div>

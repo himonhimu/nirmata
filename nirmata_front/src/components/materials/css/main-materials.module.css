@@ -46,3 +46,15 @@
 .price {
   letter-spacing: 0.1rem;
 }
+.show_more_td {
+  padding: 25px !important;
+}
+
+.show_more {
+  padding: 8px 16px;
+  border: none;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
