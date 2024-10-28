@@ -111,9 +111,9 @@ export default function MainFooter() {
         <div className={`${styles.card} ${styles.location}`}>
           <h1>Location</h1>
           <address>
-            121, Paba Para (Opposite of Rajshahi Krishi Unnayan BankHead office)
+            Holding No.- 44, TTC More, (Opposite of Rajshahi TTC 2nd Gate)
             <br />
-            Shah Mukhdum, Sapura
+            Sopura, Shah Mokhdum
             <br />
             Rajshahi, Bangladesh
           </address>
