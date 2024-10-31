@@ -25,8 +25,11 @@ export default function ContactInfo() {
         </span>
         <h3>Location</h3>
         <p>
-          121, Paba Para (Opposite of Rajshahi Krishi Unnayan BankHead office),
-          Shah Mukhdum, Sapura, Rajshahi.
+          Holding No.- 44, TTC More, (Opposite of Rajshahi TTC 2nd Gate)
+          <br />
+          Sopura, Shah Mokhdum
+          <br />
+          Rajshahi, Bangladesh
         </p>
       </div>
 

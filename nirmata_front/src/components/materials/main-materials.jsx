@@ -112,7 +112,7 @@ export default function MainMaterials({ show_more, slice_number }) {
                     <strong>{price}</strong>
                   </td>
                   <td>
-                    <time datetime={updatedDate}>
+                    <time dateTime={updatedDate}>
                       <strong> {new Date(updatedDate).toDateString()}</strong>
                     </time>
                   </td>
